@@ -1,0 +1,793 @@
+@charset "UTF-8";
+/* Variables*/
+/* Animaciones*/
+.animate__animated.animate__bounceInDown {
+  --animate-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.animate__animated.animate__bounceInRight {
+  --animate-duration: 4s;
+}
+
+.animate__animated.animate__flipInX {
+  --animate-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.animate__animated.animate__zoomInLeft {
+  --animate-duration:2s;
+}
+
+.animate__animated.animate__zoomInRight {
+  --animate-duration:2s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  font-family: "Life Savers", cursive;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #000000;
+  text-shadow: 2px 2px white;
+}
+
+/* Navegador*/
+nav a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding-right: 2px;
+  padding-left: 2px;
+}
+nav li {
+  background-color: #000;
+  border: 1px solid #000;
+  text-align: center;
+  margin: 1px;
+  padding-right: 1px;
+  padding-left: 1px;
+}
+
+/*Logo*/
+.logo {
+  width: 180px;
+}
+
+/*Video*/
+.videoResponsive {
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 56.25%;
+}
+.videoResponsive iframe {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.fondo {
+  background-color: #FFFFFF;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  margin-top: 20px;
+}
+
+.temas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/*Títulos*/
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 22px;
+  padding-top: 20px;
+}
+
+h3 {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  color: aquamarine;
+}
+
+.titulos {
+  display: flex;
+  flex-direction: block;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-size: 22px;
+  color: #24d7dd;
+  text-align: center;
+  border-radius: 30%;
+  width: 100%;
+}
+.titulos h4 {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+/*Footer*/
+footer {
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.imgredes-flex {
+  padding: 5px;
+  filter: grayscale(100%);
+}
+
+/* media queries*/
+@media (min-width: 992px) {
+  body {
+    background-color: #000000;
+    font-family: "Kaushan Script", cursive;
+  }
+
+  ul {
+    width: 80%;
+  }
+
+  h1 {
+    color: #000000;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 45px;
+  }
+
+  img {
+    display: inline;
+    margin: auto;
+  }
+
+  .logo {
+    width: 300px;
+    height: 180px;
+  }
+
+  .logo:hover {
+    background-color: black;
+    border-radius: 20%;
+  }
+
+  h2 {
+    color: #FFFFFF;
+    margin-top: 30px;
+    font-size: 32px;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  ul {
+    color: #FFFFFF;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 26px;
+  }
+
+  /* Navegador*/
+  nav a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+  }
+  nav li {
+    display: inline-block;
+    width: 10%;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+  }
+  nav nav li:hover {
+    background-color: #5c5b5b;
+    color: #000;
+  }
+
+  /*Video*/
+  .videoResponsive {
+    width: 40%;
+    padding-bottom: 20%;
+  }
+
+  .fondo {
+    background-color: #FFFFFF;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+  }
+
+  /* Lista de canciones */
+  .temas {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/8.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 40%;
+    height: 50%;
+  }
+  .temas .temas__titulo {
+    margin-left: auto;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+  }
+  .temas .temas__lista {
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.5;
+    color: black;
+    margin-bottom: 20px;
+    font-size: 25px;
+    list-style: none;
+  }
+
+  .titulos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 22px;
+    color: #24d7dd;
+    text-align: center;
+    border-radius: 30%;
+  }
+  .titulos h4 {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  .centralFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  /* Redes*/
+  .redes-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imgredes-flex {
+    padding: 5px;
+    filter: grayscale(100%);
+  }
+
+  .imgredes-flex:hover {
+    background-color: white;
+  }
+
+  /* Fin de página*/
+  footer {
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 20px;
+  }
+  footer .derechos {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+/* Discos */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.grid-disco1 {
+  grid-area: grid-disco1;
+  color: aquamarine;
+  justify-self: center;
+  transition: transform 0.2s;
+}
+
+.grid-disco1:hover {
+  transform: scale(1.2);
+}
+
+.grid-disco2 {
+  grid-area: grid-disco2;
+  color: #dd24d4;
+  justify-self: center;
+  transition: transform 0.2s;
+}
+
+.grid-disco2:hover {
+  transform: scale(1.2);
+}
+
+.grid.footer {
+  grid-area: grid-footer;
+}
+
+.imgDiscos {
+  width: 250px;
+  height: 300px;
+}
+
+/* Shows principal */
+.negro {
+  color: black;
+}
+
+.showsfoto {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  margin: auto;
+  border-radius: 15%;
+}
+.showsfoto .botonCentrado {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* media queries*/
+@media (min-width: 768px) {
+  .grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 992px) {
+  /* Discos */
+  .grid {
+    display: grid;
+    grid-template-columns: 40% 40% auto;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-areas: "grid-disco1 grid-disco2 grid-footer";
+    grid-row-gap: 100px;
+    grid-column-gap: 100px;
+    justify-content: space-evenly;
+    align-content: center;
+  }
+
+  .grid-disco1 {
+    grid-area: grid-disco1;
+    color: #24d7dd;
+    justify-self: center;
+    transition: transform 0.2s;
+  }
+
+  .grid-disco1:hover {
+    transform: scale(1.2);
+  }
+
+  .grid-disco2 {
+    grid-area: grid-disco2;
+    color: #dd24d4;
+    justify-self: center;
+    transition: transform 0.2s;
+  }
+
+  .grid-disco2:hover {
+    transform: scale(1.2);
+  }
+
+  .grid.footer {
+    grid-area: grid-footer;
+  }
+
+  .imgDiscos {
+    width: 250px;
+    height: 300px;
+  }
+
+  /* Shows principal */
+  .showsfoto {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    width: 60%;
+    height: 60%;
+    border-radius: 15%;
+    margin: auto;
+  }
+  .showsfoto .botonCentrado {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+}
+.banda {
+  display: flex;
+  flex-direction: column;
+}
+
+.banda__img {
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  border-radius: 15%;
+}
+
+.integrantes {
+  background-image: url(../img/form.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  margin-top: 150px;
+}
+.integrantes .integrantes__lista {
+  color: #000000;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  list-style: none;
+  margin: 0 auto;
+  text-shadow: 2px 2px white;
+}
+
+/*Media Queries*/
+@media (min-width: 768px) {
+  .banda__img {
+    width: 560px;
+    height: 670px;
+    display: flex;
+    flex-direction: column;
+    margin: 70px;
+    border-radius: 15%;
+  }
+}
+@media (min-width: 992px) {
+  /* La banda */
+  .contenido {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 40% 50%;
+    grid-template-rows: 200px 300px;
+    grid-template-areas: "banda__img banda";
+    grid-row-gap: 50px;
+    grid-column-gap: 30px;
+    margin-bottom: 200px;
+  }
+
+  .banda {
+    grid-area: banda;
+    text-align: center;
+    font-size: 18px;
+    margin: 50px;
+  }
+
+  .banda__img {
+    grid-area: banda__img;
+    border-radius: 20%;
+    margin: 50px;
+    object-fit: cover;
+  }
+
+  .integrantes {
+    background-image: url(../img/form.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    margin-top: 100px;
+  }
+  .integrantes .integrantes__lista {
+    color: #000000;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    list-style: none;
+    margin: 0 auto;
+    text-shadow: 2px 2px white;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  font-family: "Life Savers", cursive;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #000000;
+  text-shadow: 2px 2px white;
+}
+
+/* Navegador*/
+nav a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding-right: 2px;
+  padding-left: 2px;
+}
+nav li {
+  background-color: #000;
+  border: 1px solid #000;
+  text-align: center;
+  margin: 1px;
+  padding-right: 1px;
+  padding-left: 1px;
+}
+
+/*Logo*/
+.logo {
+  width: 180px;
+}
+
+/*Video*/
+.videoResponsive {
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 56.25%;
+}
+.videoResponsive iframe {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.fondo {
+  background-color: #FFFFFF;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  margin-top: 20px;
+}
+
+.temas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/*Títulos*/
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 22px;
+  padding-top: 20px;
+}
+
+h3 {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  color: aquamarine;
+}
+
+.titulos {
+  display: flex;
+  flex-direction: block;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-size: 22px;
+  color: #24d7dd;
+  text-align: center;
+  border-radius: 30%;
+  width: 100%;
+}
+.titulos h4 {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+/*Footer*/
+footer {
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.imgredes-flex {
+  padding: 5px;
+  filter: grayscale(100%);
+}
+
+/* media queries*/
+@media (min-width: 992px) {
+  body {
+    background-color: #000000;
+    font-family: "Kaushan Script", cursive;
+  }
+
+  ul {
+    width: 80%;
+  }
+
+  h1 {
+    color: #000000;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 45px;
+  }
+
+  img {
+    display: inline;
+    margin: auto;
+  }
+
+  .logo {
+    width: 300px;
+    height: 180px;
+  }
+
+  .logo:hover {
+    background-color: black;
+    border-radius: 20%;
+  }
+
+  h2 {
+    color: #FFFFFF;
+    margin-top: 30px;
+    font-size: 32px;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  ul {
+    color: #FFFFFF;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 26px;
+  }
+
+  /* Navegador*/
+  nav a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+  }
+  nav li {
+    display: inline-block;
+    width: 10%;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+  }
+  nav nav li:hover {
+    background-color: #5c5b5b;
+    color: #000;
+  }
+
+  /*Video*/
+  .videoResponsive {
+    width: 40%;
+    padding-bottom: 20%;
+  }
+
+  .fondo {
+    background-color: #FFFFFF;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    margin-top: 40px;
+  }
+
+  /* Lista de canciones */
+  .temas {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/8.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 40%;
+    height: 50%;
+  }
+  .temas .temas__titulo {
+    margin-left: auto;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+  }
+  .temas .temas__lista {
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.5;
+    color: black;
+    margin-bottom: 20px;
+    font-size: 25px;
+    list-style: none;
+  }
+
+  .titulos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 22px;
+    color: #24d7dd;
+    text-align: center;
+    border-radius: 30%;
+  }
+  .titulos h4 {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  .centralFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  /* Redes*/
+  .redes-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imgredes-flex {
+    padding: 5px;
+    filter: grayscale(100%);
+  }
+
+  .imgredes-flex:hover {
+    background-color: white;
+  }
+
+  /* Fin de página*/
+  footer {
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 20px;
+  }
+  footer .derechos {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

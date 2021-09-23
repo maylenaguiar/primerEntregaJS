@@ -1,0 +1,270 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: #000000;
+	font-family: 'Life Savers', cursive;
+	color: #fff;
+}
+h1{
+	text-align: $textos-centrados;
+	font-size: 24px;
+    color: #000000;
+    text-shadow: 2px 2px white;
+}	
+/* Navegador*/
+nav{
+    a{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-size: 16px;
+	text-align: $textos-centrados;
+	text-decoration:none;
+	color: #fff;
+	padding-right:2px;
+    padding-left: 2px;
+    }
+
+    li{
+	background-color:#000;
+	border:1px solid #000;
+	text-align: $textos-centrados;  
+	margin: 1px;
+	padding-right: 1px;
+	padding-left: 1px;
+    }
+} 
+/*Logo*/
+.logo{
+	width: 180px;
+}
+
+/*Video*/
+.videoResponsive{
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 56.25%;
+   
+    iframe {
+	    position: absolute;
+        height: 100%;
+        width: 100%;
+        top:0;
+        left:0;
+    }	
+}    
+.fondo{
+    background-color: #FFFFFF;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    margin-top: 20px;
+}
+.temas{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/*Títulos*/
+h2{
+    margin-bottom: 20px;
+    text-align: $textos-centrados;
+    font-size: 22px;
+    padding-top: 20px;
+}
+h3{
+	font-size: 18px;
+	text-align: $textos-centrados;
+	margin-top: 60px;
+	margin-bottom: 20px;
+	color: aquamarine;
+}
+
+
+.titulos{
+display:flex;
+flex-direction: block;
+flex-wrap: wrap;
+justify-content: space-evenly;
+font-size: 22px;
+color: rgb(36, 215, 221);
+text-align: $textos-centrados;
+border-radius: 30%;
+width: 100%;
+
+h4{
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+}
+
+}
+/*Footer*/
+footer{
+	color:#FFFFFF;
+	text-align: $textos-centrados;
+	padding-top: 50px;
+}
+.imgredes-flex{
+	padding: 5px;
+	filter: grayscale(100%);	
+}
+/* media queries*/
+@media (min-width:992px){
+
+body{
+    background-color: #000000;
+    font-family: 'Kaushan Script', cursive;
+}
+ul{
+    width: 80%;
+}
+h1{
+    color:#000000;
+    text-align: $textos-centrados;
+    margin-top:30px;
+    margin-bottom:50px;
+    font-size: 45px;
+}
+img{
+    display:inline;
+    margin:auto;
+}
+.logo{
+    width:300px;
+    height: 180px; 
+}
+.logo:hover{
+    background-color:black;
+    border-radius: 20%;
+}
+h2{
+    color: #FFFFFF;
+    margin-top: 30px;
+    font-size: 32px;
+    text-align: $textos-centrados;
+    padding-top: 20px;
+}
+ul{ color: #FFFFFF;
+}
+h3{ 
+    text-align: center;
+    font-size: 26px;
+}
+/* Navegador*/
+nav {
+     a{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 16px;
+        text-align: $textos-centrados;
+        text-decoration:none;
+        color:#fff;
+    }
+      
+    li{
+        display:inline-block;
+        width:10%;
+        padding:10px;
+        margin: 20px;
+        text-align:$textos-centrados;  
+    }
+
+    nav li:hover{
+        background-color:rgb(92, 91, 91);
+        color:#000;
+    }
+ }
+
+/*Video*/
+.videoResponsive{
+    width: 40%;
+    padding-bottom:20%;
+}
+.fondo{
+    background-color: #FFFFFF;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+
+}
+/* Lista de canciones */
+.temas{
+    display:flex;
+    flex-direction: column;
+    background-image: url(../img/8.jpg);
+    background-size: cover; 
+    background-position: center;
+    width: 40%;
+    height: 50%;
+
+    .temas__titulo{
+        margin-left: auto;
+        font-size: 24px;
+        font-weight: bold;
+        color: #000000;
+    }	
+    .temas__lista{
+        text-align: center;
+        font-weight: bold;
+        line-height: 1.5;
+        color: black;
+        margin-bottom: 20px;
+        font-size: 25px;
+        list-style: none;
+    }	
+}
+.titulos{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 22px;
+    color: rgb(36, 215, 221);
+    text-align: $textos-centrados;
+    border-radius: 30%;
+    
+    h4{
+        padding-top: 50px;
+        padding-bottom: 30px;
+
+    }
+}  
+  
+.centralFlex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+/* Redes*/
+.redes-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}		
+.imgredes-flex{	
+    padding: 5px;
+    filter: grayscale(100%);	
+}
+.imgredes-flex:hover{
+    background-color:white;
+}
+/* Fin de página*/
+footer{
+    color:#FFFFFF;
+    text-align:center;
+    padding-top: 20px;
+
+    .derechos{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+}

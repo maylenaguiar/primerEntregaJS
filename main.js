@@ -36,13 +36,19 @@ let carritoTotal=0;
             case 'subibaja':
             carrito.push({subibaja});
             carritoTotal += subibaja.precio;
-            alert('Compraste Subibaja a $800 + Iva');
+            let unaCompra = document.createElement("div");
+            unaCompra.innerHTML= `<h3> El Precio de Subibaja es $ : ${subibaja.precio}</h3> 
+                                    <p> Gracias por tu compra </p>`;
+            document.body.appendChild(unaCompra);         
             break;
             
             case 'De otro planeta': 
             carrito.push({deOtroPlaneta});
             carritoTotal += deOtroPlaneta.precio;
-            alert('Compraste De otro planeta a $1000 + Iva');
+            let estaCompra = document.createElement("div");
+            estaCompra.innerHTML= `<h3> El Precio de De otro planeta es $ : ${deOtroPlaneta.precio}</h3> 
+                                    <p> Gracias por tu compra </p>`;
+            document.body.appendChild(estaCompra); 
             break;
 
             default:
@@ -51,7 +57,10 @@ let carritoTotal=0;
         }
     ingreseDisco = prompt('Ingrese otro o ESC para finalizar compra e ir a pagar');
 }
-alert ('El total de tu compra es $ ' + carritoTotal);
+
+let totalCompra = document.createElement("h3");
+totalCompra.innerHTML= "El Total de tu compra es $ " + carritoTotal
+document.body.appendChild (totalCompra);
 
 if (ingreseDisco == 'ESC') {
     alert('Gracias por pasar, te esperamos la próxima')

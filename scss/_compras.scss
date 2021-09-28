@@ -82,7 +82,10 @@ h3{
 	margin-bottom: 20px;
 	color: aquamarine;
 }
-
+p{
+    text-align: $textos-centrados;
+    color: aquamarine;
+}
 
 .titulos{
 display:flex;

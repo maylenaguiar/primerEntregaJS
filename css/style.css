@@ -599,6 +599,11 @@ h3 {
   color: aquamarine;
 }
 
+p {
+  text-align: center;
+  color: aquamarine;
+}
+
 .titulos {
   display: flex;
   flex-direction: block;

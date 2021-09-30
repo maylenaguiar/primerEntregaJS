@@ -58,7 +58,7 @@ let carritoTotal=0;
 }
 
 let totalCompra = document.createElement("h3");
-totalCompra.innerHTML= "El Total de tu compra es $ " + carritoTotal
+totalCompra.textContent= "El Total de tu compra es $ " + carritoTotal
 document.body.appendChild (totalCompra);
 
 
@@ -67,7 +67,7 @@ let botonDiv = document.getElementById("popUp");
 
 boton.addEventListener('click', () => {
     let h3 = document.createElement('h3');
-    h3.innerHTML=`Compraste el disco, muchas gracias.  `;
+    h3.textContent=`Compraste el disco, muchas gracias.  `;
     popUp.appendChild(h3)
 })
 

@@ -31,6 +31,11 @@ deOtroPlaneta.sumarIva();
 cocosLocos.sumarIva();
 personaje.sumarIva();
 
+productos.push({subibaja});
+productos.push({deOtroPlaneta});
+productos.push({cocosLocos});
+productos.push({personaje});
+
 let carritoTotal=0;
 
 let unBoton = document.getElementById("subi");
@@ -94,24 +99,7 @@ document.body.appendChild (totalCompra);
 })
 }
 
-/*
 
-function comprar(){    
-let boton = document.getElementById("boton");
-let botonDiv = document.getElementById("popUp");
+const guardarLocal = (productos,precio) => {localStorage.setItem(productos,precio)};
 
-boton.addEventListener('click', () => {
-let totalCompra = document.createElement("h3");
-totalCompra.textContent= "El Total de tu compra es $ " + carritoTotal
-document.body.appendChild (totalCompra);
-})
-
-}
-
-/*
-const guardarLocal = (producto, precio) => {localStorage.setItem(producto,precio)};
-
-for (const producto of productos){
-    guardarLocal(productos.precio,JSONstringfy(producto));
-}*/
-
+guardarLocal('listaProductos',JSON.stringify(productos));

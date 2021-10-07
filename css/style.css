@@ -704,6 +704,11 @@ footer {
     background-color: #5c5b5b;
     color: #000;
   }
+
+  .discosTotales .discos {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

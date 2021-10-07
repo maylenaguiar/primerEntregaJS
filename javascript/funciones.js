@@ -1,34 +1,6 @@
 
-// Creo la clase Discos
-class Discos{
-
-    constructor(precio, cantidad) {
-
-        this.precio = precio;
-
-        this.cantidad   = cantidad;
-
-        }
-        sumarIva(){
-            this.precio = this.precio * 1.21;
-    }
- }
-
-// Creo el array Carrito
-const carrito = [];
-
-//Creo mis objetos o productos
-
-const subibaja = new Discos(800, 22);
-const deOtroPlaneta = new Discos(1000, 34);
-
-subibaja.sumarIva ();
-deOtroPlaneta.sumarIva();
-
-let carritoTotal=0;
-
-//Comprar discos
-   let ingreseDisco = prompt('Ingrese el nombre del disco a comprar o ESC para salir');   
+/*
+let ingreseDisco = prompt('Ingrese el nombre del disco a comprar o ESC para salir');   
     while (ingreseDisco != 'ESC'){
 
         switch (ingreseDisco) {
@@ -60,15 +32,4 @@ let carritoTotal=0;
 let totalCompra = document.createElement("h3");
 totalCompra.textContent= "El Total de tu compra es $ " + carritoTotal
 document.body.appendChild (totalCompra);
-
-
-let boton = document.getElementById("boton");
-let botonDiv = document.getElementById("popUp");
-
-boton.addEventListener('click', () => {
-    let h3 = document.createElement('h3');
-    h3.textContent=`Compraste el disco, muchas gracias.  `;
-    popUp.appendChild(h3)
-})
-
-
+*/

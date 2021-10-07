@@ -1,4 +1,4 @@
-
+//PRUEBAS
 /*
 let ingreseDisco = prompt('Ingrese el nombre del disco a comprar o ESC para salir');   
     while (ingreseDisco != 'ESC'){

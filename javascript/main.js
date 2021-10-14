@@ -103,3 +103,4 @@ document.body.appendChild (totalCompra);
 const guardarLocal = (productos,precio) => {localStorage.setItem(productos,precio)};
 
 guardarLocal('listaProductos',JSON.stringify(productos));
+

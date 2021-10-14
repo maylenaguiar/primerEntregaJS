@@ -256,6 +256,14 @@ nav {
 .imgredes-flex:hover{
     background-color:white;
 }
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-content: space-between;
+} 
 /* Fin de página*/
 footer{
     color:#FFFFFF;

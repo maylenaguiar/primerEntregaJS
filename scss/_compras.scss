@@ -41,21 +41,6 @@ nav{
 .logo{
 	width: 180px;
 }
-
-/*Video*/
-.videoResponsive{
-    position: relative;
-    margin: 0 auto;
-    padding-bottom: 56.25%;
-   
-    iframe {
-	    position: absolute;
-        height: 100%;
-        width: 100%;
-        top:0;
-        left:0;
-    }	
-}    
 .fondo{
     background-color: #FFFFFF;
     color: black;
@@ -194,4 +179,5 @@ nav {
      width: 300px;
      height: 300px;
  }
+
 }

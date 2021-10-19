@@ -291,6 +291,14 @@ footer {
     background-color: white;
   }
 
+  .botones {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+  }
+
   /* Fin de página*/
   footer {
     color: #FFFFFF;
@@ -555,20 +563,6 @@ nav li {
   width: 180px;
 }
 
-/*Video*/
-.videoResponsive {
-  position: relative;
-  margin: 0 auto;
-  padding-bottom: 56.25%;
-}
-.videoResponsive iframe {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-}
-
 .fondo {
   background-color: #FFFFFF;
   color: black;
@@ -705,9 +699,25 @@ footer {
     color: #000;
   }
 
-  .discosTotales .discos {
+  .discosTotales {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 30px;
+  }
+
+  .discos {
     width: 300px;
     height: 300px;
+  }
+
+  .botones {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 }
 

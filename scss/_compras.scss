@@ -180,4 +180,11 @@ nav {
      height: 300px;
  }
 
+.botones{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 }

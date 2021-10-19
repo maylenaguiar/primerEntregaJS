@@ -13,6 +13,12 @@ for(const entrada of entradas){
     </div>
     `);
     $(`#btn${entrada.id}`).on('click', function(){
-        $('#entradas').append(`<p>Compraste ${entrada.nombre}</p>`);
+        $('#entradas').append(`<p class='estilo'>Compraste ${entrada.nombre}</p>`);
+        $('p').css("background-color","white");
+        $("p").css("width", "50%");
+        $(".estilo").css("color", "black")
+        .slideUp(2000)
+        .delay(2000)
+        .slideDown(2000);
     });
 }

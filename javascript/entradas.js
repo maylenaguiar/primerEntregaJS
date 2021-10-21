@@ -7,19 +7,21 @@ const entradas =[
 for(const entrada of entradas){
     $('#entradas').append(` 
     <div id="caja${entrada.id}">
-    <h4> Producto: ${entrada.nombre}</h4>
+    <h4> ${entrada.nombre}</h4>
     <b> $ ${entrada.valor}</b>
     <button id="btn${entrada.id}">Comprar entrada</button>
     </div>
-    `);
+     `);
     $(`#btn${entrada.id}`).on('click', function(){
-        $(`#caja${entrada.id}`).append(`<p class='estilo'>Compraste ${entrada.nombre}</p>`);
+        $(`#caja${entrada.id}`).append(`<br>
+        <br>
+        <p class='estilo'>Compraste ${entrada.nombre}</p>`);
         $('p').css("background-color","white");
-        $("p").css("width", "50%");
+        $("p").css('width', '50%');
         $('p').css('margin-left', '25%');
         $(".estilo").css("color", "black")
-        .slideUp(2000)
-        .delay(2000)
+        .css("display", "none")
+        .delay(1000)
         .slideDown(2000);
     });
 }

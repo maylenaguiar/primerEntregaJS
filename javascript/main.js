@@ -104,3 +104,29 @@ const guardarLocal = (productos,precio) => {localStorage.setItem(productos,preci
 
 guardarLocal('listaProductos',JSON.stringify(productos));
 
+$(document).ready(function () {
+    const APIURL = "http://jsonplaceholder.typicode.com/posts";
+
+const info = {
+    nombre: "Cocos",
+    mail: "cocos@cocos.com.ar",
+};
+
+$("#formulario").append(
+    `<button id="post">Enviar suscripción</button>`
+);
+
+$("#post").click((e) => {
+    e.preventDefault();
+    $.ajax({
+        method: "POST",
+        url: APIURL,
+        data: info,
+        success: function (res) {
+            $("#respuesta").append(
+                `<h4>Formulario enviado exitosamente: <br> ${res.nombre}, <br> ${res.mail}</h4>`
+            );
+        },
+    });
+});
+});

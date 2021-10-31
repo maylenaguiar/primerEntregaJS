@@ -1,8 +1,8 @@
-
 // Creo la clase Discos
 class Discos{
 
-    constructor(precio, cantidad) {
+    constructor(nombre, precio, cantidad) {
+        this.nombre = nombre;
 
         this.precio = precio;
 
@@ -21,10 +21,10 @@ const carrito = [];
 
 //Creo mis objetos o productos
 
-const subibaja = new Discos(800, 22);
-const deOtroPlaneta = new Discos(1000, 34);
-const cocosLocos = new Discos (750, 30);
-const personaje = new Discos (900, 16);
+const subibaja = new Discos('subibaja', 800, 22);
+const deOtroPlaneta = new Discos('de otro planeta', 1000, 34);
+const cocosLocos = new Discos ('cocos locos', 750, 30);
+const personaje = new Discos ('personaje', 900, 16);
 
 subibaja.sumarIva ();
 deOtroPlaneta.sumarIva();
@@ -36,7 +36,11 @@ productos.push({deOtroPlaneta});
 productos.push({cocosLocos});
 productos.push({personaje});
 
+console.log(productos);
+
 let carritoTotal=0;
+
+//Botones para comprar discos
 
 let unBoton = document.getElementById("subi");
 let unBotonDiv = document.getElementById("popUpsubi");
@@ -86,6 +90,9 @@ cuartoBoton.addEventListener('click', () => {
     document.body.appendChild(nuevaCompra);  
 
 })
+
+//Finalización de compra del disco
+
 if (carrito != 0){
     const carrito= [];
 } else{
@@ -99,10 +106,13 @@ document.body.appendChild (totalCompra);
 })
 }
 
+//Objetos guardados en localStorage
 
 const guardarLocal = (productos,precio) => {localStorage.setItem(productos,precio)};
 
 guardarLocal('listaProductos',JSON.stringify(productos));
+
+//Uso de Api para formulario simulado
 
 $(document).ready(function () {
     const APIURL = "http://jsonplaceholder.typicode.com/posts";

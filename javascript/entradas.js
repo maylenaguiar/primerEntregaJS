@@ -1,8 +1,12 @@
+//Array de objetos: Entradas al concierto
+
 const entradas =[
     {id: 1, nombre: 'Entradas Roxy', valor: 600, cantidad: 200},
     {id: 2, nombre: 'Entradas Córdoba', valor: 500, cantidad: 300},
     {id: 3, nombre: 'Entradas Rosario', valor: 400, cantidad: 200},
 ];
+
+//Botones para cada entrada
 
 for(const entrada of entradas){
     $('#entradas').append(` 

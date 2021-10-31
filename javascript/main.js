@@ -142,8 +142,9 @@ $("#post").click((e) => {
         url: APIURL,
         data: info,
         success: function (res) {
+            $("#formulario").empty();
             $("#respuesta").append(
-                `<h4>Formulario enviado exitosamente: <br> ${res.nombre}, <br> ${res.mail}</h4>`
+                `<h4>Formulario enviado exitosamente: <br> ${res.nombre} <br> ${res.mail}</h4>`
             );
         },
     });

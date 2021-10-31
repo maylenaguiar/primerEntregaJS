@@ -49,12 +49,13 @@ unBoton.addEventListener('click', () => {
     carrito.push({subibaja});
     carritoTotal += subibaja.precio;
     let unaCompra = document.createElement("div");
-    unaCompra.innerHTML= `<h3> El Precio de Subibaja es $ : ${subibaja.precio}</h3> 
-                            <p> Agregado al carrito </p>`;
+    unaCompra.innerHTML= `<div class="cart"> 
+                            <h3> Agregaste Subibaja - Precio $ ${subibaja.precio}</h3> 
+                            <p> Agregado al carrito </p> </div>`;
     document.body.appendChild(unaCompra);
 
     })        
-    
+
 let esteBoton= document.getElementById('planeta');
 let otroDiv = document.getElementById('popUpPlaneta');
 
@@ -62,8 +63,9 @@ esteBoton.addEventListener('click', () => {
     carrito.push({deOtroPlaneta});
     carritoTotal += deOtroPlaneta.precio;
     let estaCompra = document.createElement("div");
-    estaCompra.innerHTML= `<h3> El Precio de De otro planeta es $ : ${deOtroPlaneta.precio}</h3> 
-                            <p> Agregado al carrito </p>`;
+    estaCompra.innerHTML= `<div class="cart-1"> 
+                            <h3> Agregaste De Otro Planeta- Precio $ ${deOtroPlaneta.precio}</h3> 
+                            </div>`;
     document.body.appendChild(estaCompra); 
 })
 
@@ -74,9 +76,10 @@ tercerBoton.addEventListener('click', () => {
     carrito.push({personaje});
     carritoTotal += personaje.precio;
     let otraCompra = document.createElement("div");
-    otraCompra.innerHTML= `<h3> El Precio de Personaje es $ : ${personaje.precio}</h3> 
-                                <p> Agregado al carrito </p>`;
-    document.body.appendChild(otraCompra); 
+    otraCompra.innerHTML= `<div class="cart-2">
+                            <h3> Agregaste Personaje - Precio ${personaje.precio}</h3> 
+                            </div>`;
+    document.body.append(otraCompra); 
 })
 let cuartoBoton= document.getElementById('locos');
 let cuartoDiv = document.getElementById('popUpLocos');
@@ -85,8 +88,9 @@ cuartoBoton.addEventListener('click', () => {
     carrito.push({cocosLocos});
     carritoTotal += cocosLocos.precio;
     let nuevaCompra = document.createElement("div");
-    nuevaCompra.innerHTML= `<h3> El Precio de Cocos Locos es $ : ${cocosLocos.precio}</h3> 
-                            <p> Agregado al carrito </p>`;
+    nuevaCompra.innerHTML= `<div class="cart-3"> 
+                            <h3> Agregaste Cocos Locos- Precio $ : ${cocosLocos.precio}</h3> 
+                             </div>`;
     document.body.appendChild(nuevaCompra);  
 
 })
@@ -101,7 +105,12 @@ let botonDiv = document.getElementById("popUp");
 
 boton.addEventListener('click', () => {
 let totalCompra = document.createElement("h3");
-totalCompra.textContent= "El Total de tu compra es $ " + carritoTotal
+totalCompra.innerHTML= `<div class= carritoLleno> 
+                        <h3>El Total de tu compra es $ ${carritoTotal} </div>`
+$(".cart").empty();
+$(".cart-1").empty();
+$(".cart-2").empty();
+$(".cart-3").empty();
 document.body.appendChild (totalCompra);
 })
 }

@@ -193,6 +193,65 @@ nav {
      width: 300px;
      height: 300px;
  }
+ .cart{
+    position: fixed;
+    top: 30%;
+    left: 60%;
+    width: fit-content;
+    color: black;
+    background-color: grey;
+    font-size: smaller;
+    border-radius: 10px;
+    border-style: solid;
+    opacity: 80%;
+}
+.cart-1{
+    position: fixed;
+    top: 30%;
+    right: 60%;
+    width: fit-content;
+    color: black;
+    background-color: grey;
+    font-size: smaller;
+    border-radius: 10px;
+    border-style: solid;
+    opacity: 80%;
+}
+.cart-2{
+    position: fixed;
+    bottom: 5%;
+    right: 60%;
+    width: fit-content;
+    color: black;
+    background-color: grey;
+    font-size: smaller;
+    border-radius: 10px;
+    border-style: solid;
+    opacity: 80%;
+}
+.cart-3{
+    position: fixed;
+    bottom: 5%;
+    left: 60%;
+    width: fit-content;
+    color: black;
+    background-color: grey;
+    font-size: smaller;
+    border-radius: 10px;
+    border-style: solid;
+    opacity: 80%;
+}
+.carritoLleno{
+    position: fixed;
+    top: 30%;
+    left: 40%;
+    width: fit-content;
+    color: black;
+    background-color: grey;
+    font-size: smaller;
+    border-radius: 10px;
+    border-style: solid;
+}
 /* Botones*/
 .botones{
     text-align: center;

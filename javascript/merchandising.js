@@ -1,14 +1,5 @@
-//Array de merchandising
-const mercaderia = [
-                {id: 1, nombre: "Remera blanca", precio: 300},
-                {id: 2, nombre: "Remera negra", precio: 310},
-                {id: 3, nombre: "Taza con logo", precio: 150},
-                {id: 4, nombre: "Gorra blanca", precio: 120},
-                {id: 5, nombre: "Remera Violeta", precio: 300},
-                {id: 6, nombre: "Remera con Logo", precio: 310},
-                {id: 7, nombre: "Gorra violeta", precio: 150},
-                {id: 8, nombre: "Taza tapa disco", precio: 120},
-];
+//Aquí traigo el array de mercadería
+const mercaderia =  JSON.parse(dataMercaderia);
 
 //Generar productos en el HTML
 const contenedorMercaderia = document.getElementById('js-contenedor');

@@ -19,7 +19,7 @@ const productos = [];
 // Creo el array Carrito
 const carrito = [];
 
-//Creo mis objetos o productos
+//Creo mis objetos o productos. En este caso son discos de música
 
 const subibaja = new Discos('subibaja', 800, 22);
 const deOtroPlaneta = new Discos('de otro planeta', 1000, 34);
@@ -40,7 +40,7 @@ console.log(productos);
 
 let carritoTotal=0;
 
-//Botones para comprar discos
+//Botones para agregar discos al carrito
 
 let unBoton = document.getElementById("subi");
 let unBotonDiv = document.getElementById("popUpsubi");

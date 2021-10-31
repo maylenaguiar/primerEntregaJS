@@ -1,10 +1,6 @@
-//Array de objetos: Entradas al concierto
+//Aquí traigo el array de ENTRADAS
 
-const entradas =[
-    {id: 1, nombre: 'Entradas Roxy', valor: 600, cantidad: 200},
-    {id: 2, nombre: 'Entradas Córdoba', valor: 500, cantidad: 300},
-    {id: 3, nombre: 'Entradas Rosario', valor: 400, cantidad: 200},
-];
+const entradas = JSON.parse(dataEntradas);
 
 //Botones para cada entrada
 

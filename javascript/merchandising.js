@@ -1,4 +1,5 @@
 //Aquí traigo el array de mercadería
+
 const mercaderia =  JSON.parse(dataMercaderia);
 
 //Generar productos en el HTML

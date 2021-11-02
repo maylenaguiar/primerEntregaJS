@@ -9,13 +9,13 @@ for(const entrada of entradas){
     <div id="caja${entrada.id}">
     <h4> ${entrada.nombre}</h4>
     <b> $ ${entrada.valor}</b>
-    <button id="btn${entrada.id}">Comprar entrada</button>
+    <button id="btn${entrada.id}">Ver fecha</button>
     </div>
      `);
     $(`#btn${entrada.id}`).on('click', function(){
         $(`#caja${entrada.id}`).append(`<br>
         <br>
-        <p class='estilo'>Compraste ${entrada.nombre}</p>`);
+        <p class='estilo'>Próximamente ${entrada.nombre}</p>`);
         $('p').css("background-color","white");
         $("p").css('width', '50%');
         $('p').css('margin-left', '25%');
@@ -25,4 +25,5 @@ for(const entrada of entradas){
         .slideDown(2000);
     });
 }
+
 

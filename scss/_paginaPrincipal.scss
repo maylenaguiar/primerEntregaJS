@@ -104,7 +104,6 @@ h4{
 }
 /*Footer*/
 footer{
-	color:#FFFFFF;
 	text-align: $textos-centrados;
 	padding-top: 50px;
 }
@@ -266,13 +265,23 @@ nav {
 } 
 /* Fin de página*/
 footer{
-    color:#FFFFFF;
+    background-color: #000000;
     text-align:center;
     padding-top: 20px;
 
     .derechos{
+        background-color: #000000;
         padding-top: 20px;
         padding-bottom: 20px;
     }
+}
+.volver{
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: $textos-centrados;
+    font-size: 24px;
+    margin-right: 10%;
+    color: #FFFFFF; 
+    text-decoration: none;
 }
 }

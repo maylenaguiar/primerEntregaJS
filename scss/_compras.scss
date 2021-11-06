@@ -196,47 +196,11 @@ nav {
  .cart{
     position: fixed;
     top: 30%;
-    left: 60%;
+    left: 38%;
     width: fit-content;
     color: black;
     background-color: grey;
-    font-size: smaller;
-    border-radius: 10px;
-    border-style: solid;
-    opacity: 80%;
-}
-.cart-1{
-    position: fixed;
-    top: 30%;
-    right: 60%;
-    width: fit-content;
-    color: black;
-    background-color: grey;
-    font-size: smaller;
-    border-radius: 10px;
-    border-style: solid;
-    opacity: 80%;
-}
-.cart-2{
-    position: fixed;
-    bottom: 5%;
-    right: 60%;
-    width: fit-content;
-    color: black;
-    background-color: grey;
-    font-size: smaller;
-    border-radius: 10px;
-    border-style: solid;
-    opacity: 80%;
-}
-.cart-3{
-    position: fixed;
-    bottom: 5%;
-    left: 60%;
-    width: fit-content;
-    color: black;
-    background-color: grey;
-    font-size: smaller;
+    font-size: 16px;
     border-radius: 10px;
     border-style: solid;
     opacity: 80%;
@@ -320,5 +284,17 @@ h6{
     margin-bottom: 100px;
     padding-top: 50px;
     padding-bottom: 50px;
+}
+/*productos locales*/
+.productosLocales{
+    background-color: aquamarine;
+    color: black;
+    border-radius: 10%;
+    padding: 40px;
+    text-align: center;
+    margin-right: 30%;
+    margin-bottom: 10%;
+    margin-left: 30%;
+    
 }
 }

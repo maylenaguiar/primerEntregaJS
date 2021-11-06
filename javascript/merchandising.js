@@ -1,10 +1,7 @@
 //Aquí traigo el array de mercadería
-
 const mercaderia =  JSON.parse(dataMercaderia);
-
 //Generar productos en el HTML
 const contenedorMercaderia = document.getElementById('js-contenedor');
-
 const mercaderiaHTML = (elemento) =>{
     return `<div class="card">
             <div class="card-body">
@@ -14,7 +11,6 @@ const mercaderiaHTML = (elemento) =>{
             </div>
             <br>`;
 }
-
 const generarHTML = (mercaderia, contenedor) => {
     contenedor.innerHTML= ""
     if(mercaderia.length > 0) {
@@ -28,14 +24,11 @@ const generarHTML = (mercaderia, contenedor) => {
     } 
 }
 generarHTML(mercaderia,contenedorMercaderia);
-
 //Input para Buscador de Discos
 const buscarInput = document.getElementById("buscarProductos");
 const buscarBoton = document.getElementById("buscarBoton");
-
  const filtrarMercaderia = () => {
     const buscarValorInput = buscarInput.value;
-
     const productoFiltrado = mercaderia.filter((producto) => {
         const productoNombre = producto.nombre.toLowerCase();
         return productoNombre.includes(buscarValorInput.toLowerCase());
@@ -43,7 +36,5 @@ const buscarBoton = document.getElementById("buscarBoton");
     generarHTML(productoFiltrado,contenedorMercaderia);
     
  }
-
- 
 // //Botón buscar merchandising
 buscarBoton.addEventListener('click', filtrarMercaderia);

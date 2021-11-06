@@ -1,9 +1,6 @@
 //Aquí traigo el array de ENTRADAS
-
 const entradas = JSON.parse(dataEntradas);
-
 //Botones para cada entrada
-
 for(const entrada of entradas){
     $('#entradas').append(` 
     <div id="caja${entrada.id}">
@@ -16,10 +13,10 @@ for(const entrada of entradas){
         $(`#caja${entrada.id}`).append(`<br>
         <br>
         <p class='estilo'>Próximamente ${entrada.nombre}</p>`);
-        $('p').css("background-color","white");
-        $("p").css('width', '50%');
-        $('p').css('margin-left', '25%');
-        $(".estilo").css("color", "black")
+        $('.estilo').css("background-color","white");
+        $('.estilo').css('width', '50%');
+        $('.estilo').css('margin-left', '25%');
+        $('.estilo').css("color", "black")
         .css("display", "none")
         .delay(1000)
         .slideDown(2000);

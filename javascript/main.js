@@ -170,10 +170,10 @@ const guardarLocal = (productos,precio) => {localStorage.setItem(productos,preci
 guardarLocal('listaProductos',JSON.stringify(productos));
 //Carrito de compras guardados en localStorage
 const guardarCarrito = (carritoComprado,carrito) => {localStorage.setItem(carritoComprado,carrito)};
-guardarCarrito('carritoDeCompras',JSON.stringify(carritoComprado, carrito));
+guardarCarrito('carritoDeCompras',JSON.stringify(carrito));
 //Uso de Api para formulario simulado
 $(document).ready(function () {
-    const APIURL = "http://jsonplaceholder.typicode.com/posts";
+const APIURL = "http://jsonplaceholder.typicode.com/posts";
 const info = {
     nombre: "Cocos",
     mail: "cocos@cocos.com.ar",

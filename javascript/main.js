@@ -76,11 +76,13 @@ unBoton.addEventListener('click', () => {
         document.body.appendChild (totalCompra);
         let salir = document.getElementById('finalizar');
         salir.addEventListener('click', () =>{
-        $('.carritoLleno').remove();
+        $('.carritoLleno').css('display', 'none');
+        carrito.splice(0, carrito.length);
+        window.location.reload();
         })    
     })
 }
-    else if(carrito.length >= 2){
+    else if (carrito.length >= 2){
         mostrarCarrito(carrito);
     }
   })      
@@ -104,10 +106,12 @@ esteBoton.addEventListener('click', () => {
         let salir = document.getElementById('finalizar');
         salir.addEventListener('click', () =>{
         $('.carritoLleno').remove();
+        carrito.splice(0, carrito.length);
+        window.location.reload();
         })    
     })
     }
-    else if(carrito.length >= 2){
+    else if (carrito.length >= 2) {
         mostrarCarrito(carrito);
     }
 })
@@ -131,10 +135,12 @@ tercerBoton.addEventListener('click', () => {
         let salir = document.getElementById('finalizar');
         salir.addEventListener('click', () =>{
         $('.carritoLleno').remove();
+        carrito.splice(0, carrito.length);
+        window.location.reload();
         })
     })
     }
-    else if(carrito.length >= 2){
+    else if (carrito.length >= 2){
         mostrarCarrito(carrito);
     }
     })
@@ -158,10 +164,12 @@ tercerBoton.addEventListener('click', () => {
         let salir = document.getElementById('finalizar');
         salir.addEventListener('click', () =>{
         $('.carritoLleno').remove();
+        carrito.splice(0, carrito.length);
+        window.location.reload();
         })    
     })
     }
-    else if(carrito.length >= 2){
+    else if (carrito.length >= 2){
         mostrarCarrito(carrito);
     }  
 })

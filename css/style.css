@@ -745,11 +745,10 @@ footer {
     left: 38%;
     width: fit-content;
     color: black;
-    background-color: grey;
+    background-color: white;
     font-size: 16px;
     border-radius: 10px;
     border-style: solid;
-    opacity: 80%;
   }
 
   .carritoLleno {
@@ -762,6 +761,10 @@ footer {
     font-size: smaller;
     border-radius: 10px;
     border-style: solid;
+  }
+
+  .agregados {
+    color: black;
   }
 
   /* Botones*/
@@ -851,6 +854,10 @@ footer {
     margin-right: 30%;
     margin-bottom: 10%;
     margin-left: 30%;
+  }
+
+  #js-productosAgregados {
+    display: none;
   }
 }
 

@@ -199,11 +199,10 @@ nav {
     left: 38%;
     width: fit-content;
     color: black;
-    background-color: grey;
+    background-color:white;
     font-size: 16px;
     border-radius: 10px;
     border-style: solid;
-    opacity: 80%;
 }
 .carritoLleno{
     position: fixed;
@@ -215,6 +214,9 @@ nav {
     font-size: smaller;
     border-radius: 10px;
     border-style: solid;
+}
+.agregados{
+    color: black;
 }
 /* Botones*/
 .botones{
@@ -296,5 +298,8 @@ h6{
     margin-bottom: 10%;
     margin-left: 30%;
     
+}
+#js-productosAgregados{
+    display: none;
 }
 }

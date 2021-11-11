@@ -45,11 +45,11 @@ $('#js-precioTotal').empty();
         );
         $(`#eliminar${elemento.id}${lista}`).on('click', ()=>{
             let eliminarElemento = '';
-            eliminarElemento =productos.indexOf(elemento);
+            eliminarElemento =elementos.indexOf(elemento);
             elementos.splice(eliminarElemento,1);
             precioFinal -= elemento.precio;
             mostrarCarrito(elementos);
-            if(elementos.length === 0){
+            if(elementos.length == 0){
                 $('#js-productosAgregados').css("display", "none");
             }
         })
